@@ -1,7 +1,8 @@
 package Homework_1.animals;
 
 abstract class Animals {
-    public String name;
+    protected static int countAnimals = 0;
+    protected String name;
     protected String animal;
     protected int runCapacity;
     protected int swimCapacity;
@@ -9,6 +10,7 @@ abstract class Animals {
 
 
     public Animals(String name){
+        countAnimals++;
         this.name = name;
     }
 
